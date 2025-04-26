@@ -18,7 +18,7 @@ for index, row in df.iterrows():
     for y in range(20, 298, 10):
         pdf.line(10, y, 200, y)
 
-    #set the footer for the master page
+    #set the footer
     pdf.ln(265)
     pdf.set_font(family="Times", style="I", size=8)
     pdf.set_text_color(100, 100, 100)
@@ -30,6 +30,7 @@ for index, row in df.iterrows():
         for y in range(20, 298, 10):
             pdf.line(10, y, 200, y)
 
+        # set the footer
         pdf.ln(277)
         pdf.set_font(family="Times", style="I", size=8)
         pdf.set_text_color(100, 100, 100)
